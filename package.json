@@ -1,0 +1,32 @@
+{
+  "name": "node-red-contrib-facebook-publish",
+  "version": "0.0.1",
+  "description": "Node for node-red that publishes on facebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azzalan/node-red-contrib-facebook-publish.git"
+  },
+  "keywords": [
+    "node-red",
+    "node",
+    "facebook"
+  ],
+  "author": "Alan Ramalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azzalan/node-red-contrib-facebook-publish/issues"
+  },
+  "homepage": "https://github.com/azzalan/node-red-contrib-facebook-publish#readme",
+  "node-red": {
+    "nodes": {
+      "facebook-publish": "nodes/facebook-publish.js"
+    }
+  },
+  "dependencies": {
+    "fbgraph": "^1.4.4"
+  }
+}
