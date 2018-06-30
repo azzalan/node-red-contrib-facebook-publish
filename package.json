@@ -24,12 +24,16 @@
   "node-red": {
     "nodes": {
       "facebook-get-token": "nodes/facebook-publish.js",
-      "facebook-publish": "nodes/facebook-get-token.js"
+      "facebook-publish": "nodes/facebook-get-token.js",
+      "twitter-flex": "nodes/twitter.js"
     }
   },
   "dependencies": {
     "axios": "^0.18.0",
     "fb": "^2.0.0",
-    "fbgraph": "^1.4.4"
+    "fbgraph": "^1.4.4",
+    "http": "0.0.0",
+    "twit": "^2.2.11",
+    "util": "^0.11.0"
   }
 }

@@ -7,12 +7,9 @@ module.exports = function(RED) {
       RED.nodes.createNode(this,config);
       var node = this;
       node.on('input', function(msg) {
-          var wallPost = {
-            message: msg.payload
-          };
           FB.api('oauth/access_token', {
-            client_id: client_id,
-            client_secret: client_secret,
+            client_id: msg.client_id,
+            client_secret: msg.client_secret,
             grant_type: 'publish_actions'
           }, function (res) {
               node.send({payload: res})
