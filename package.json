@@ -23,10 +23,13 @@
   "homepage": "https://github.com/azzalan/node-red-contrib-facebook-publish#readme",
   "node-red": {
     "nodes": {
-      "facebook-publish": "nodes/facebook-publish.js"
+      "facebook-get-token": "nodes/facebook-publish.js",
+      "facebook-publish": "nodes/facebook-get-token.js"
     }
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "fb": "^2.0.0",
     "fbgraph": "^1.4.4"
   }
 }
