@@ -10,10 +10,10 @@ module.exports = function(RED) {
       var node = this;
       node.on('input', function(msg) {
           FB.api('oauth/access_token', {
-            client_id: msg.client_id,
-            client_secret: msg.client_secret,
-            redirect_uri: msg.redirect_uri,
-            grant_type: msg.grant_type
+            client_id: msg.payload.client_id,
+            client_secret: msg.payload.client_secret,
+            redirect_uri: msg.payload.redirect_uri,
+            grant_type: msg.payload.grant_type
           }, function (res) {
               node.send({payload: res})
           });
